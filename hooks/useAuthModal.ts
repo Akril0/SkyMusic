@@ -1,14 +1,19 @@
 import { create } from 'zustand';
+import {ViewType} from "@supabase/auth-ui-shared";
 
 interface AuthModalStore {
+  view:ViewType | undefined
   isOpen: boolean;
-  onOpen: () => void;
+  setView:(view:ViewType) =>void;
+  onOpen: (viewType: ViewType) => void;
   onClose: () => void;
 }
 
 const useAuthModal = create<AuthModalStore>((set) => ({
+  view: undefined,
   isOpen: false,
-  onOpen: () => set({ isOpen: true }),
+  setView:(view) => set({ view }),
+  onOpen: (viewType) => set({ isOpen: true, view:viewType }),
   onClose: () => set({ isOpen: false }),
 }));
 
