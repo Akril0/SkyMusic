@@ -13,7 +13,7 @@ const PageContent: React.FC<PageContentProps> = ({songs,}) => {
 
     if(songs.length ===0){
         return (
-            <div className='mt-4 text-neutral-400'>
+            <div className='mt-4 text-neutral-900'>
                 Not songs available!
             </div>
         )

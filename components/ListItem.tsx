@@ -29,7 +29,7 @@ const ListItem: React.FC<ListItemProps> = ({ image, name, href }) => {
       rounded-md
       overflow-hidden
       gap-x-4
-      bg-neutral-100/10
+      bg-blue-800/10
       hover:bg-neutral-100/20
       transition
       pr-4
@@ -62,7 +62,7 @@ const ListItem: React.FC<ListItemProps> = ({ image, name, href }) => {
             fle
             items-center
             justify-center
-            bg-green-500
+            bg-blue-500
             p-4
             drop-shadow-md
             right-5
@@ -71,7 +71,7 @@ const ListItem: React.FC<ListItemProps> = ({ image, name, href }) => {
       
          "
       >
-        <FaPlay className="text-black" />
+        <FaPlay className="text-white" />
       </div>
     </button>
   );

@@ -15,7 +15,7 @@ const Search:React.FC<SearchProps> = async ({searchParams}) => {
     return (
         <div
             className='
-                bg-neutral-900
+                bg-gray-200
                 rounded-lg
                 h-full
                 w-full
@@ -23,9 +23,9 @@ const Search:React.FC<SearchProps> = async ({searchParams}) => {
                 overflow-y-auto
             '
         >
-            <Header className='from-neutral-900'>
+            <Header className='from-gray-200'>
                 <div className='mb-2 flex flex-col gap-y-6'>
-                    <h1 className='text-white text-3xl font-semibold'>
+                    <h1 className='text-black text-3xl font-semibold'>
                         Search
                     </h1>
                     <SearchInput/>

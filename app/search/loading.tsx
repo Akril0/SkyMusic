@@ -6,7 +6,7 @@ import {BounceLoader} from "react-spinners";
 const Loading = () => {
     return (
         <Box className='h-full flex items-center justify-center'>
-            <BounceLoader color='#22c55e' size={40}/>
+            <BounceLoader color='rgb(59,130,236)' size={40}/>
         </Box>
     );
 };

@@ -9,7 +9,7 @@ const Liked = async () => {
     const songs = await  getLikedSongs();
     return (
         <div className='
-            bg-neutral-900
+            bg-gray-200
             rounded-lg
             h-full
             w-full
@@ -47,7 +47,7 @@ const Liked = async () => {
                                 </p>
                                 <h1
                                     className='
-                                        text-white
+                                        text-black
                                         text-4xl
                                         sm:text-5xl
                                         lg:text-7xl

@@ -32,8 +32,8 @@ const AuthLinks:React.FC<AuthLinksProps>=({linkArr})=>{
             {linkArr.map((link, index)=>(
                     <p key={index} className='
                     text-sm
-                    text-neutral-400
-                    hover:text-neutral-300
+                    text-gray-50
+                    hover:text-neutral-500
                     text-center
                     cursor-pointer
                     underline
@@ -78,7 +78,7 @@ const AuthModal = () => {
             <Auth
 
                 view={view}
-                theme="dark"
+                theme="light"
                 providers={['github']}
                 supabaseClient={supabaseClient}
                 showLinks={false}
@@ -88,8 +88,15 @@ const AuthModal = () => {
                     variables: {
                         default: {
                             colors: {
-                                brand: '#404040',
-                                brandAccent: '#22c55e',
+                                brand: 'rgb(249 250 251)',
+                                brandAccent: 'rgb(59,130,236)',
+                                brandButtonText: 'rgb(23,23,23)',
+                                defaultButtonText: 'rgb(23,23,23)',
+                                inputLabelText: 'rgb(23,23,23)',
+                                inputPlaceholder: 'rgb(23,23,23)',
+                                inputText: 'rgb(23,23,23)',
+                                inputBorderFocus: 'rgb(59,130,236)',
+                                inputBorderHover: 'rgb(59,130,236)',
                             },
                         },
                     },

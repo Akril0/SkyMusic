@@ -172,7 +172,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({song, songUrl}) => {
                         onClick={onPlayPrevious}
                         size={28}
                         className="
-                        text-neutral-400
+                         text-gray-200
                         cursor-pointer
                         hover:text-white
                         transition
@@ -187,7 +187,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({song, songUrl}) => {
                     h-8
                     w-8
                     rounded-full
-                    bg-white
+                    bg-neutral-200
                     p-1
                     cursor-pointer
                 ">
@@ -197,7 +197,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({song, songUrl}) => {
                         onClick={onPlayNext}
                         size={28}
                         className="
-                        text-neutral-400
+                        text-gray-200
                         cursor-pointer
                         hover:text-white
                         transition
@@ -211,6 +211,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({song, songUrl}) => {
                         justify-center
                         items-center
                         gap-x-2
+                        text-white
                     '>
                     <Slider value={seconds} onChange={(value)=>sound.seek([value])} max={duration / 1000} step={1}/>
                     <div className='
@@ -235,7 +236,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({song, songUrl}) => {
                     <VolumeIcon
                         onClick={toggleMute}
                         size={34}
-                        className="cursor-pointer"
+                        className="cursor-pointer text-white"
                     />
                     <Slider
                         value={volume}

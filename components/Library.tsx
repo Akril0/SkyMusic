@@ -47,7 +47,7 @@ const Library:React.FC<LibraryProps> = ({songs}) => {
             gap-x-2
          "
         >
-          <TbPlaylist className="text-neutral-400" size={26} />
+          <TbPlaylist className="text-neutral-900" size={26} />
           <p
             className="
               text-netural-400
@@ -62,9 +62,9 @@ const Library:React.FC<LibraryProps> = ({songs}) => {
           onClick={onClick}
           size={20}
           className="
-            text-neutral-400
+            text-neutral-900
             cursor-pointer
-            hover:text-white
+            hover:text-neutral-500
             transition
           "
         />

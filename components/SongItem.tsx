@@ -29,9 +29,9 @@ const SongItem:React.FC<SongItemProps> = ({
                 rounded-md
                 overflow-hidden
                 gap-x-4
-                bg-neutral-400/5
+                bg-blue-500/30
                 cursor-pointer
-                hover:bg-neutral-400/10
+                hover:bg-blue-500/20
                 transition
                 p-3
             '
@@ -57,7 +57,7 @@ const SongItem:React.FC<SongItemProps> = ({
                     {data.title}
                 </p>
                 <p className='
-                    text-neutral-400
+                    text-neutral-900
                     text-sm
                     pb-4
                     w-full

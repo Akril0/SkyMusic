@@ -11,13 +11,13 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           `
          w-full
          rounded-full
-         bg-green-500
+         bg-blue-500
          border-transparent
          px-3
          py-3
          disabled:cursor-not-allowed
          disabled:opacity-50
-         text-black
+         text-white
          font-bold
          hover:opacity-75
          transition

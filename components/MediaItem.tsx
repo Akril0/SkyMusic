@@ -30,7 +30,7 @@ const MediaItem: React.FC<MediaItemProps> = ({data, onClick}) => {
                 items-center
                 gap-x-3
                 cursor-pointer
-                hover:bg-neutral-800/50
+                hover:bg-blue-300/50
                 w-full
                 p-2
                 rounded-md
@@ -59,10 +59,10 @@ const MediaItem: React.FC<MediaItemProps> = ({data, onClick}) => {
                 overflow-hidden
                 "
             >
-                <p className='text-white truncate'>
+                <p className='text-black truncate'>
                     {data.title}
                 </p>
-                <p className='text-neutral-400 text-sm truncate'>
+                <p className='text-neutral-900 text-sm truncate'>
                     {data.author}
                 </p>
             </div>

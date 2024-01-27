@@ -42,7 +42,7 @@ const Header: React.FC<HeaderProps> = ({children, className}) => {
                 `
          h-fit
          bg-gradient-to-b
-         from-emerald-800
+         from-blue-500
          p-6
       `,
                 className,
@@ -69,7 +69,7 @@ const Header: React.FC<HeaderProps> = ({children, className}) => {
                         onClick={router.back}
                         className="
                  rounded-full 
-                 bg-black
+                 bg-white
                  flex
                  items-center
                  justify-center
@@ -77,13 +77,13 @@ const Header: React.FC<HeaderProps> = ({children, className}) => {
                  transition
                "
                     >
-                        <RxCaretLeft className="text-white" size={35}/>
+                        <RxCaretLeft className="text-black" size={35}/>
                     </button>
                     <button
                         onClick={router.forward}
                         className="
                  rounded-full 
-                 bg-black
+                 bg-white
                  flex
                  items-center
                  justify-center
@@ -91,7 +91,7 @@ const Header: React.FC<HeaderProps> = ({children, className}) => {
                  transition
                "
                     >
-                        <RxCaretRight className="text-white" size={35}/>
+                        <RxCaretRight className="text-black" size={35}/>
                     </button>
                 </div>
                 <div className="flex md:hidden gap-x-2 items-center">
@@ -138,13 +138,13 @@ const Header: React.FC<HeaderProps> = ({children, className}) => {
                         <div className='flex gap-x-4 items-center'>
                             <Button
                             onClick={hahdleLogout}
-                            className='bg-white px-6 py-2'
+                            className='bg-white text-black px-6 py-2'
                             >
                                 Logout
                             </Button>
                             <Button
                             onClick={()=> router.push('/account')}
-                            className='bg-white'
+                            className='bg-white text-black'
                             >
                                 <FaUserAlt/>
                             </Button>
@@ -156,7 +156,7 @@ const Header: React.FC<HeaderProps> = ({children, className}) => {
                                     onClick={()=>authModal.onOpen('sign_up')}
                                     className="
                   bg-transparent
-                  text-neutral-300
+                  text-white
                   font-medium
                 "
                                 >
