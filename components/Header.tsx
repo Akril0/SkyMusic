@@ -143,7 +143,7 @@ const Header: React.FC<HeaderProps> = ({children, className}) => {
                                 Logout
                             </Button>
                             <Button
-                            onClick={()=> router.push('/account')}
+                            // onClick={()=> router.push('/account')}
                             className='bg-white text-black'
                             >
                                 <FaUserAlt/>
@@ -160,13 +160,14 @@ const Header: React.FC<HeaderProps> = ({children, className}) => {
                   font-medium
                 "
                                 >
-                                    Sing up
+                                    Sign up
                                 </Button>
                             </div>
                             <div>
                                 <Button
                                     onClick={()=>authModal.onOpen('sign_in')}
                                     className="
+                  text-black
                   bg-white
                   px-6
                   py-2
